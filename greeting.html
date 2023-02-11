@@ -113,6 +113,18 @@ var today = new Date();
 document.getElementById('date').innerHTML = today.toDateString();
 }
 
+    function clock() {
+var today = new Date();
+var hour = zeros(twelveHour(today.getHours()));
+var minutes = zeros(today.getMinutes());
+var seconds = zeros(today.getSeconds());
+if(today.getHours() >=12){
+    seconds+=" pm"
+}
+else{
+    seconds+=" am"
+}
+    
 hrs = today.getHours();
 if (hrs < 24)
         greet = 'Good Morning  Tatiana';
