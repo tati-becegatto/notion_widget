@@ -126,8 +126,8 @@ else{
     seconds+=" am"
 }
 hrs = today.getHours();
-if (hrs < 24)
-        greet = 'Good Morning  Tatiana';
+if (hrs < 12)
+        greet = 'Good Morning Tatiana ';
     else if (hrs >= 12 && hrs <= 17)
         greet = 'Good Afternoon Tatiana';
     else if (hrs >= 17 && hrs <= 24)
@@ -140,7 +140,7 @@ document.getElementById('sec').innerHTML = seconds;
 }
 
 function twelveHour(hour) {
-if (hour > 24) {
+if (hour > 12) {
     return hour -= 12 
 } else if (hour === 0) {
     return hour = 12;
